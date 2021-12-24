@@ -1,0 +1,46 @@
+button{
+    background-color: rgb(192, 185, 185);
+    border-radius: 8px;
+    border: 2px solid rgb(106, 76, 155);
+    font-size: large;
+    color:crimson;
+}
+button:active{
+    border: 1px solid black;
+}
+.imagesContainer{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    text-align: center;
+    border: 2px solid black;
+    background-color: rgb(137, 240, 247);
+    border-radius: 10rem;
+    overflow: hidden;
+    margin: 20px;
+}
+
+.image{
+    border: 2px crimson solid;
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+}
+
+@keyframes animation {
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(360deg);
+    }
+}
+
+.buttons{
+    text-align: center;
+}
+
+@media only screen and (max-width: 880px) {
+    .imagesContainer {
+        grid-template-columns: repeat(3,1fr);
+    }
+  }
